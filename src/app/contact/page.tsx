@@ -16,10 +16,10 @@ export default function Contact() {
         email or phone and I&apos;ll get back to you.
       </p>
       <a
-        href="mailto:hello@jaishriradhe.com"
+        href="mailto:vibhuk12@gmail.com"
         className="mt-6 inline-block rounded-full bg-maroon px-6 py-3 text-sm font-medium text-cream transition-colors hover:bg-maroon-dark"
       >
-        hello@jaishriradhe.com
+        vibhuk12@gmail.com
       </a>
 
       <div className="mt-10 rounded-lg border border-saffron-light/50 bg-white/60 p-6">
