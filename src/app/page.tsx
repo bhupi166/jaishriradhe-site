@@ -9,17 +9,25 @@ export default function Home() {
   return (
     <>
       <section className="border-b border-saffron-light/40 bg-gradient-to-b from-cream-deep to-cream">
-        <div className="mx-auto flex max-w-6xl items-center justify-center gap-6 px-6 py-16">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-6 px-6 py-16">
           <Image
-            src="/ShreeRadhe.png"
+            src="/ShreeRadhe.webp"
             alt="Shree Radhe"
-            width={941}
-            height={1672}
-            className="hidden w-40 shrink-0 rounded-lg object-cover shadow-md md:block lg:w-56"
+            width={600}
+            height={1066}
+            className="order-1 w-28 shrink-0 rounded-lg object-cover shadow-md sm:w-32 md:w-40 lg:w-56"
             priority
           />
 
-          <div className="max-w-xl text-center">
+          <Image
+            src="/ShreeRadhe.webp"
+            alt="Shree Radhe"
+            width={600}
+            height={1066}
+            className="order-2 w-28 shrink-0 rounded-lg object-cover shadow-md sm:w-32 md:order-3 md:w-40 lg:w-56"
+          />
+
+          <div className="order-3 basis-full text-center md:order-2 md:basis-auto md:max-w-xl">
             <h1 className="font-heading text-5xl font-semibold text-maroon sm:text-6xl">
               Jai Shri Radhe
             </h1>
@@ -43,14 +51,6 @@ export default function Home() {
               </Link>
             </div>
           </div>
-
-          <Image
-            src="/ShreeRadhe.png"
-            alt="Shree Radhe"
-            width={941}
-            height={1672}
-            className="hidden w-40 shrink-0 rounded-lg object-cover shadow-md md:block lg:w-56"
-          />
         </div>
       </section>
 

@@ -23,7 +23,12 @@ export default function Contact() {
       </a>
 
       <div className="mt-10 rounded-lg border border-saffron-light/50 bg-white/60 p-6">
-        <h2 className="font-heading text-2xl font-semibold text-maroon">
+        <p className="text-foreground/80">
+          Talk to astrologer online Free to get detailed and accurate
+          guidance for every issue in life. This includes love, marriage,
+          finances, health, and even education-related problems.
+        </p>
+        <h2 className="mt-4 font-heading text-2xl font-semibold text-maroon">
           Pandit Vaibhav
         </h2>
         <p className="mt-3 text-foreground/80">
