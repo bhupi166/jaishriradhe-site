@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --background: #fdf8f0;
+  --foreground: #3a1e12;
+  --maroon: #7a1f2b;
+  --maroon-dark: #5c1620;
+  --saffron: #d98e2b;
+  --saffron-light: #f2c675;
+  --cream: #fdf8f0;
+  --cream-deep: #f5ead6;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-maroon: var(--maroon);
+  --color-maroon-dark: var(--maroon-dark);
+  --color-saffron: var(--saffron);
+  --color-saffron-light: var(--saffron-light);
+  --color-cream: var(--cream);
+  --color-cream-deep: var(--cream-deep);
+  --font-serif: var(--font-heading);
+  --font-sans: var(--font-body);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-heading {
+  font-family: var(--font-heading), ui-serif, Georgia, serif;
+}
