@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 import PostCard from "@/components/PostCard";
+import ChantCounter from "@/components/ChantCounter";
 
 export default function Home() {
   const recentPosts = getAllPosts().slice(0, 3);
@@ -14,7 +15,7 @@ export default function Home() {
             src="/ShreeRadhe.webp"
             alt="Shree Radhe"
             width={600}
-            height={1066}
+            height={900}
             className="order-1 w-28 shrink-0 rounded-lg object-cover shadow-md sm:w-32 md:w-40 lg:w-56"
             priority
           />
@@ -23,7 +24,7 @@ export default function Home() {
             src="/ShreeRadhe.webp"
             alt="Shree Radhe"
             width={600}
-            height={1066}
+            height={900}
             className="order-2 w-28 shrink-0 rounded-lg object-cover shadow-md sm:w-32 md:order-3 md:w-40 lg:w-56"
           />
 
@@ -50,6 +51,21 @@ export default function Home() {
                 About This Space
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-saffron-light/40 bg-cream-deep px-6 py-16">
+        <div className="mx-auto max-w-2xl">
+          <h2 className="font-heading text-3xl font-semibold text-maroon">
+            Chant Together
+          </h2>
+          <p className="mt-3 text-foreground/75">
+            Every tap adds to one shared count, kept for everyone who visits
+            this page.
+          </p>
+          <div className="mt-8">
+            <ChantCounter />
           </div>
         </div>
       </section>
