@@ -9,7 +9,9 @@ export default function ChantCounter() {
   useEffect(() => {
     fetch("/api/chant-count")
       .then((res) => res.json())
-      .then((data: { count: number }) => setCount(data.count))
+      // only apply this if the user hasn't already chanted while it was in flight,
+      // otherwise it can overwrite a newer count with a stale one
+      .then((data: { count: number }) => setCount((c) => c ?? data.count))
       .catch(() => {});
   }, []);
 

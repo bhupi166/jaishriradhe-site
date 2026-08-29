@@ -17,16 +17,11 @@ const body = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jaishriradhe.com"),
-  title: {
-    default: "Jai Shri Radhe",
-    template: "%s | Jai Shri Radhe",
-  },
-  description:
-    "Reflections, teachings, and stories on devotion, bhakti, and the spiritual path.",
+  title: "Jai Shri Radhe",
+  description: "Chant Radhe Radhe together — one shared, live count.",
   openGraph: {
     title: "Jai Shri Radhe",
-    description:
-      "Reflections, teachings, and stories on devotion, bhakti, and the spiritual path.",
+    description: "Chant Radhe Radhe together — one shared, live count.",
     url: "https://jaishriradhe.com",
     siteName: "Jai Shri Radhe",
     type: "website",

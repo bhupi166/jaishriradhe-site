@@ -1,12 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
-import { getAllPosts } from "@/lib/posts";
-import PostCard from "@/components/PostCard";
 import ChantCounter from "@/components/ChantCounter";
 
 export default function Home() {
-  const recentPosts = getAllPosts().slice(0, 3);
-
   return (
     <>
       <section className="border-b border-saffron-light/40 bg-gradient-to-b from-cream-deep to-cream">
@@ -33,30 +28,15 @@ export default function Home() {
               Jai Shri Radhe
             </h1>
             <p className="mx-auto mt-6 text-lg text-foreground/80">
-              Reflections, teachings, and stories on devotion, bhakti, and the
-              spiritual path — for anyone curious enough to slow down and look
-              inward.
+              A shared space to chant Radhe Radhe together, one tap at a
+              time.
             </p>
-            <div className="mt-8 flex justify-center gap-4">
-              <Link
-                href="/blog"
-                className="rounded-full bg-maroon px-6 py-3 text-sm font-medium text-cream transition-colors hover:bg-maroon-dark"
-              >
-                Read the Reflections
-              </Link>
-              <Link
-                href="/about"
-                className="rounded-full border border-maroon px-6 py-3 text-sm font-medium text-maroon transition-colors hover:bg-maroon/10"
-              >
-                About This Space
-              </Link>
-            </div>
           </div>
         </div>
       </section>
 
-      <section className="border-b border-saffron-light/40 bg-cream-deep px-6 py-16">
-        <div className="mx-auto max-w-2xl">
+      <section className="px-6 py-16">
+        <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-heading text-3xl font-semibold text-maroon">
             Chant Together
           </h2>
@@ -67,17 +47,6 @@ export default function Home() {
           <div className="mt-8">
             <ChantCounter />
           </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-4xl px-6 py-16">
-        <h2 className="font-heading text-3xl font-semibold text-maroon">
-          Recent Reflections
-        </h2>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {recentPosts.map((post) => (
-            <PostCard key={post.slug} post={post} />
-          ))}
         </div>
       </section>
     </>
