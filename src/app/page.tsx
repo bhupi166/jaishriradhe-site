@@ -1,5 +1,4 @@
 import Image from "next/image";
-import ChantCounter from "@/components/ChantCounter";
 
 export default function Home() {
   return (
@@ -28,26 +27,16 @@ export default function Home() {
               Jai Shri Radhe
             </h1>
             <p className="mx-auto mt-6 text-lg text-foreground/80">
-              A shared space to chant Radhe Radhe together, one tap at a
-              time.
+              A space to chant Radhe Radhe together.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="px-6 py-16">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-heading text-3xl font-semibold text-maroon">
-            Chant Together
-          </h2>
-          <p className="mt-3 text-foreground/75">
-            Every tap adds to one shared count, kept for everyone who visits
-            this page.
-          </p>
-          <div className="mt-8">
-            <ChantCounter />
-          </div>
-        </div>
+      <section className="px-6 py-16 text-center">
+        <p className="font-heading text-3xl font-semibold text-maroon">
+          Chant Karo 🙏
+        </p>
       </section>
     </>
   );

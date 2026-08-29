@@ -18,10 +18,10 @@ const body = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://jaishriradhe.com"),
   title: "Jai Shri Radhe",
-  description: "Chant Radhe Radhe together — one shared, live count.",
+  description: "Chant Karo — a space to chant Radhe Radhe together.",
   openGraph: {
     title: "Jai Shri Radhe",
-    description: "Chant Radhe Radhe together — one shared, live count.",
+    description: "Chant Karo — a space to chant Radhe Radhe together.",
     url: "https://jaishriradhe.com",
     siteName: "Jai Shri Radhe",
     type: "website",

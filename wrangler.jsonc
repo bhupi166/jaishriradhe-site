@@ -1,13 +1,8 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "jaishriradhe-site",
-  "main": "worker.js",
   "compatibility_date": "2026-08-20",
   "assets": {
-    "directory": "./out",
-    "binding": "ASSETS"
-  },
-  "kv_namespaces": [
-    { "binding": "CHANT_KV", "id": "6d3746110fa84da8b327a3f9f4a1b326" }
-  ]
+    "directory": "./out"
+  }
 }
