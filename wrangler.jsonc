@@ -8,6 +8,6 @@
     "binding": "ASSETS"
   },
   "kv_namespaces": [
-    { "binding": "CHANT_KV", "id": "REPLACE_WITH_KV_NAMESPACE_ID" }
+    { "binding": "CHANT_KV", "id": "6d3746110fa84da8b327a3f9f4a1b326" }
   ]
 }
